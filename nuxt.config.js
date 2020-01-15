@@ -1,5 +1,3 @@
-import colors from "vuetify/es5/util/colors";
-
 export default {
   mode: "universal",
   /*
@@ -44,9 +42,6 @@ export default {
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     transpile: ["@gitgraph/js/lib", "pdfvuer"],
     extend(config, ctx) {
       config.module.rules.push({

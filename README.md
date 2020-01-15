@@ -1,10 +1,12 @@
 # website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36544b50-ac70-4202-adad-6e291f0c9247/deploy-status)](https://app.netlify.com/sites/georgesoteriou/deploys)
+
 > My Personal Website
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
