@@ -12,7 +12,6 @@
                 {{ contact.info }}
               </v-list-item-subtitle>
             </v-list-item-content>
-
             <v-list-item-avatar tile size="100">
               <v-img v-if="contact.pic" :src="contact.pic"></v-img>
             </v-list-item-avatar>

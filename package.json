@@ -16,7 +16,8 @@
     "babel-runtime": "^6.26.0",
     "nuxt": "^2.11.0",
     "pdfvuer": "^1.4.0",
-    "vuetify": "^2.0.0"
+    "vuetify": "^2.0.0",
+    "worker-loader": "^2.0.0"
   },
   "devDependencies": {
     "@mdi/font": "^4.7.95",

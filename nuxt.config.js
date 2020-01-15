@@ -41,13 +41,22 @@ export default {
   /*
    ** Build configuration
    */
+  mode: "spa",
   build: {
     transpile: ["@gitgraph/js/lib", "pdfvuer"],
-    extend(config, ctx) {
+    extend(config, { isDev, isClient }) {
       config.module.rules.push({
         test: /\.(pdf)(\?.*)?$/,
         loader: "url-loader"
       });
+      // Web Worker support
+      if (isClient) {
+        config.module.rules.push({
+          test: /\.worker\.js$/,
+          use: { loader: "worker-loader" },
+          exclude: /(node_modules)/
+        });
+      }
     }
   }
 };
