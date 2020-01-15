@@ -7,10 +7,20 @@
       </v-btn>
     </v-layout>
     <v-layout ma-5 row justify-center align-center>
-      <PDF :resize="true" :src="CV" :page="1"></PDF>
+      <PDF
+        :resize="true"
+        :src="CV"
+        :page="1"
+        style="width:100%;margin:20px auto;"
+      ></PDF>
     </v-layout>
     <v-layout ma-5 row justify-center align-center>
-      <PDF :resize="true" :src="CV" :page="2"></PDF>
+      <PDF
+        :resize="true"
+        :src="CV"
+        :page="2"
+        style="width:100%;margin:20px auto;"
+      ></PDF>
     </v-layout>
   </div>
 </template>
