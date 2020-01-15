@@ -6,11 +6,11 @@
         Download CV
       </v-btn>
     </v-layout>
-    <v-layout ma-5 row justify-center align-center>
-      <PDF :src="CV" :page="1"></PDF>
+    <v-layout row justify-center align-center>
+      <PDF :resize="true" :src="CV" :page="1"></PDF>
     </v-layout>
-    <v-layout ma-5 row justify-center align-center>
-      <PDF :src="CV" :page="2"></PDF>
+    <v-layout row justify-center align-center>
+      <PDF :resize="true" :src="CV" :page="2"></PDF>
     </v-layout>
   </div>
 </template>
