@@ -136,6 +136,9 @@ export default {
     commit(Imperial, 'Complete Year 3')
     const Google = master.branch('Google')
     commit(Google, 'Start work at Google as Android Enterprise Intern')
+    commit(Google, 'Design high priority app update project')
+    commit(Google, 'Launch high priority app update project')
+    master.merge(Google)
   }
 }
 </script>
