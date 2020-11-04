@@ -46,38 +46,28 @@ export default {
       drawer: false,
       items: [
         {
-          icon: "mdi-apps",
-          title: "Welcome",
-          to: "/"
+          icon: 'mdi-apps',
+          title: 'Welcome',
+          to: '/'
         },
         {
-          icon: "mdi-account",
-          title: "About",
-          to: "/about"
+          icon: 'mdi-account',
+          title: 'About',
+          to: '/about'
         },
         {
-          icon: "mdi-contact-mail-outline",
-          title: "Contact",
-          to: "/contact"
+          icon: 'mdi-contact-mail-outline',
+          title: 'Contact',
+          to: '/contact'
         },
         {
-          icon: "mdi-projector-screen",
-          title: "Projects",
-          to: "/projects"
-        },
-        {
-          icon: "mdi-post-outline",
-          title: "Blog",
-          to: "/blog"
-        },
-        {
-          icon: "mdi-file-document-outline",
-          title: "CV",
-          to: "/cv"
+          icon: 'mdi-file-document-outline',
+          title: 'CV',
+          to: '/cv'
         }
       ],
-      title: "George Soteriou"
-    };
+      title: 'George Soteriou'
+    }
   }
-};
+}
 </script>
