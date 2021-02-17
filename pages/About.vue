@@ -132,7 +132,7 @@ export default {
     commit(DoCSoc, 'Create Sponsors Portal v2')
     commit(DoCSoc, 'IC Hack 20 Branding and Publicity lead Organizer')
     commit(Imperial, 'Create Drone Playground Group project')
-    master.merge(DoCSoc)
+    Imperial.merge(DoCSoc)
     commit(Imperial, 'Complete Year 3')
     const Google = master.branch('Google')
     commit(Google, 'Start work at Google as Android Enterprise Intern')
