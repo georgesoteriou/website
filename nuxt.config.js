@@ -18,7 +18,7 @@ export default {
     script: [
       {
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        data-ad-client: "ca-pub-7552803612952968",
+        "data-ad-client": "ca-pub-7552803612952968",
         async: true
       },
     ],
