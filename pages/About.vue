@@ -50,7 +50,9 @@ export default {
           '#00D8FD',
           '#3cfff7',
           '#00b6f0',
+          '#0F9D58',
           '#0F9D58'
+
         ],
         branch: {
           spacing: 30,
@@ -134,11 +136,19 @@ export default {
     commit(Imperial, 'Create Drone Playground Group project')
     Imperial.merge(DoCSoc)
     commit(Imperial, 'Complete Year 3')
+    const GoogleIntern = master.branch('Google Intern')
+    commit(GoogleIntern, 'Start work at GoogleIntern as Android Enterprise Intern')
+    commit(GoogleIntern, 'Design high priority app update project')
+    commit(GoogleIntern, 'Launch high priority app update project')
+    master.merge(GoogleIntern)
+    commit(Imperial, 'Finish Thesis: Neural Super Resolution Assisted by Depth Estimation')
+    commit(Imperial, 'Complete Year 4')
+    commit(Imperial, 'Graduate')
+    master.merge(Imperial)
+    commit(master, 'Move to Zurich')
     const Google = master.branch('Google')
-    commit(Google, 'Start work at Google as Android Enterprise Intern')
-    commit(Google, 'Design high priority app update project')
-    commit(Google, 'Launch high priority app update project')
-    master.merge(Google)
+    commit(Google, 'Start work at Google (Youtube Team) as Software Engineer')
+
   }
 }
 </script>
