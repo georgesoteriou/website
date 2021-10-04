@@ -31,7 +31,7 @@ import PDF from "pdfvuer";
 export default {
   data() {
     return {
-      CV: require("@/assets/CV.pdf")
+      CV: "./CV.pdf"
     };
   },
   components: {

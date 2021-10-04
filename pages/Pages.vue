@@ -88,14 +88,12 @@ export default {
         {
           name: "Series",
           pic: "https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sonarr-icon.png",
-          link: "http://sonar.georgesoteriou.com/",
-          info: "sonar.georgesoteriou.com"
+          link: "http://boss.georgesoteriou.com:8989/",
         },
         {
           name: "Movies",
           pic: "https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/radarr-icon.png",
-          link: "http://radar.georgesoteriou.com/",
-          info: "radar.georgesoteriou.com"
+          link: "http://boss.georgesoteriou.com:7878/",
         },
         {
           name: "SAB",
