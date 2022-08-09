@@ -6,9 +6,10 @@
         Download CV
       </v-btn>
     </v-layout>
-    <v-layout ma-5 row justify-center align-center>
+    <v-layout ma-5 row justify-center align-center v-for="i in 2" :key="i">
       <vue-pdf-embed
         :source="C"
+        :page="i"
         style="width: 80%; margin: 20px auto"
       ></vue-pdf-embed>
     </v-layout>
@@ -40,9 +41,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.vue-pdf-embed > div {
-  margin-bottom: 20px;
-}
-</style>
