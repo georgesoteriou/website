@@ -1,9 +1,8 @@
 <template>
   <div>
-    <v-layout ma-5 row justify-center align-center v-for="i in 55" :key="i">
+    <v-layout row justify-center align-center>
       <vue-pdf-embed
         :source="T"
-        :page="i"
         style="width: 80%; margin: 20px auto"
       ></vue-pdf-embed>
     </v-layout>
@@ -24,3 +23,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.vue-pdf-embed>div {
+    margin-bottom: 20px;
+}
+</style>
