@@ -48,26 +48,31 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'Welcome',
-          to: '/'
+          to: '/',
         },
         {
           icon: 'mdi-account',
           title: 'About',
-          to: '/about'
+          to: '/about',
         },
         {
-          icon: 'mdi-contact-mail-outline',
+          icon: 'mdi-card-account-mail-outline',
           title: 'Contact',
-          to: '/contact'
+          to: '/contact',
         },
         {
           icon: 'mdi-file-document-outline',
           title: 'CV',
-          to: '/cv'
-        }
+          to: '/cv',
+        },
+        {
+          icon: 'mdi-file-document-outline',
+          title: 'Thesis',
+          to: '/thesis',
+        },
       ],
-      title: 'George Soteriou'
+      title: 'George Soteriou',
     }
-  }
+  },
 }
 </script>

@@ -7,46 +7,42 @@
       </v-btn>
     </v-layout>
     <v-layout ma-5 row justify-center align-center>
-      <PDF
-        :resize="true"
-        :src="CV"
-        :page="1"
-        style="width:100%;margin:20px auto;"
-      ></PDF>
-    </v-layout>
-    <v-layout ma-5 row justify-center align-center>
-      <PDF
-        :resize="true"
-        :src="CV"
-        :page="2"
-        style="width:100%;margin:20px auto;"
-      ></PDF>
+      <vue-pdf-embed
+        :source="C"
+        style="width: 80%; margin: 20px auto"
+      ></vue-pdf-embed>
     </v-layout>
   </div>
 </template>
 
 <script>
-import PDF from "pdfvuer";
+import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
 
 export default {
   data() {
     return {
-      CV: "./CV.pdf"
-    };
+      C: '/docs/CV.pdf',
+    }
   },
   components: {
-    PDF
+    VuePdfEmbed,
   },
   methods: {
-    saveFile: function() {
-      const linkSource = this.CV;
-      const downloadLink = document.createElement("a");
-      const fileName = "GeorgeSoteriouCV.pdf";
+    saveFile: function () {
+      const linkSource = this.C
+      const downloadLink = document.createElement('a')
+      const fileName = 'GeorgeSoteriouCV.pdf'
 
-      downloadLink.href = linkSource;
-      downloadLink.download = fileName;
-      downloadLink.click();
-    }
-  }
-};
+      downloadLink.href = linkSource
+      downloadLink.download = fileName
+      downloadLink.click()
+    },
+  },
+}
 </script>
+
+<style>
+.vue-pdf-embed > div {
+  margin-bottom: 20px;
+}
+</style>

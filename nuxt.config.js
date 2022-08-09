@@ -1,5 +1,4 @@
 export default {
-  mode: "universal",
   /*
    ** Headers of the page
    */
@@ -48,7 +47,7 @@ export default {
   /*
    ** Build configuration
    */
-  mode: "spa",
+  ssr: false,
   build: {
     transpile: ["@gitgraph/js/lib", "pdfvuer"],
     extend(config, { isDev, isClient }) {
