@@ -47,6 +47,7 @@ export default {
   /*
    ** Build configuration
    */
+  target: "static",
   ssr: false,
   build: {
     transpile: ["@gitgraph/js/lib", "pdfvuer"],
