@@ -6,10 +6,12 @@
         Download CV
       </v-btn>
     </v-layout>
+    <div v-if="isLoading" class="text-h3">Loading...</div>
     <v-layout row justify-center align-center>
       <vue-pdf-embed
         :source="C"
         style="width: 80%; margin: 20px auto"
+        @rendered="handleDocumentRender"
       ></vue-pdf-embed>
     </v-layout>
   </div>
@@ -36,6 +38,9 @@ export default {
       downloadLink.href = linkSource
       downloadLink.download = fileName
       downloadLink.click()
+    },
+    handleDocumentRender() {
+      this.isLoading = false
     },
   },
 }
