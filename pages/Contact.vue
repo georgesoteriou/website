@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap justify-center align-center>
-    <v-flex pa-5 v-for="(contact, i) in contacts" :key="i" xs12 sm6 lg3>
+    <v-flex pa-5 v-for="(contact, i) in contacts" :key="i" xs12 sm4 lg4>
       <a :href="contact.link" target="_blank">
         <v-card class="pa-2" outlined>
           <v-list-item>
@@ -27,18 +27,6 @@ export default {
   data() {
     return {
       contacts: [
-        {
-          name: "Facebook",
-          pic: require("@/assets/social/fb.png"),
-          link: "https://www.facebook.com/georgesot",
-          info: "georgesot"
-        },
-        {
-          name: "Twitter",
-          pic: require("@/assets/social/tw.png"),
-          link: "https://twitter.com/GeorgeSoteriou",
-          info: "@georgesoteriou"
-        },
         {
           name: "LinkedIn",
           pic: require("@/assets/social/li.png"),
